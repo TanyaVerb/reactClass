@@ -1,0 +1,29 @@
+.btn {
+  padding: 6px 12px;
+  cursor: pointer;
+  background-color: rgb(159, 159, 202);
+  box-shadow: 0px 0px 5px 5px cornflowerblue;
+  border: 2px solid black;
+  font-size: 24px;
+  border-radius: 5px;
+  color: white;
+}
+.btn:hover {
+  background-color: rgb(53, 53, 192);
+  color: black;
+  transform: scale(0.95);
+}
+
+.btn:active {
+  transform: scale(0.9);
+  border: 2px solid rgb(159, 159, 202);
+  color: white;
+}
+
+.btn.danger {
+  background-color: red;
+}
+
+.btn.primary {
+  background-color: rgb(11, 11, 131);
+}
