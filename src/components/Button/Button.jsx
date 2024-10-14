@@ -1,25 +1,35 @@
+import { classNames } from "../../utils/index.tsx";
+import { useState } from "react";
 import "./style.css";
 
 function Button(props) {
-  const { title, type } = props;
-  let style = "";
+  const { title, isDanger, isPrimary, isM, isL, onClick } = props;
+  const [counter, setCounter] = useState(0);
 
-  switch (type) {
-    case "isDanger":
-      style = "danger btn";
-      break;
+  const [style, setStyle] = useState(false);
 
-    case "isPrimary":
-      style = "primary btn";
-
-    default:
-      style = "btn";
-      break;
-  }
-
+  console.log("render btn");
   return (
-    <button className={style} onClick={() => console.log(title)}>
-      {title}
+    <button
+      className={classNames(
+        "btn",
+        {
+          danger: isDanger,
+          primary: isPrimary,
+          btn_m: isM,
+          btn_l: isL,
+          onClick,
+          temp: style,
+        },
+        ["color-red"]
+      )}
+      onClick={() => {
+        onClick();
+        setCounter((prevState) => prevState + 1);
+        setStyle((prevState) => !prevState);
+      }}
+    >
+      {`${title} - кликнули ${counter} раз`}
     </button>
   );
 }
