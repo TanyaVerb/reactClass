@@ -1,0 +1,31 @@
+.task {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 30px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.container-task {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  border-bottom: 2px solid rgb(116, 109, 109);
+  padding-bottom: 11px;
+  align-items: center;
+  gap: 20px;
+}
+
+p {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Добавляем многоточие */
+  white-space: nowrap; /* Предотвращаем перенос текста*/
+  font: inherit;
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(102, 70, 245);
+}

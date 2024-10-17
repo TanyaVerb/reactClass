@@ -1,0 +1,18 @@
+input {
+  width: 100%;
+  padding: 7px;
+  border-radius: 5px;
+  border-color: blueviolet;
+  text-align: start;
+  font: inherit;
+  font-weight: 400;
+  font-size: 22px;
+  color: blueviolet;
+  outline: none;
+}
+
+input::placeholder {
+  color: rgb(102, 70, 245);
+  font-size: inherit;
+  /* text-align: center; */
+}

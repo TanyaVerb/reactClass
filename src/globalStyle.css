@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.todo {
+  /* height: 100vh; */
+  min-height: 100vh;
+  width: 100%;
+  padding: 10px;
+  background: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.todo-block {
+  /* height: 100%; */
+  min-height: 100vh;
+  max-width: 700px;
+  min-width: 380px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 40px;
+  background-color: rgb(173, 100, 240);
+}

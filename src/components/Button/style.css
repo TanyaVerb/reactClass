@@ -1,4 +1,4 @@
-.btn {
+/* .btn {
   padding: 6px 12px;
   cursor: pointer;
   background-color: rgb(159, 159, 202);
@@ -41,4 +41,23 @@
 
 .temp {
   background-color: green;
+} */
+.btn {
+  background-color: rgb(102, 70, 245);
+  color: white;
+  font: inherit;
+  font-weight: 300;
+  padding: 7px 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  box-shadow: inset rgba(0, 0, 0, 0.6) 0 -3px 8px,
+    inset rgba(252, 255, 255, 0.7) 0 3px 8px, rgba(0, 0, 0, 0.8) 0 3px 8px -3px;
+}
+
+.add {
+  padding: 5px 20px;
+}
+.filter {
+  padding: 5px 17px;
 }
