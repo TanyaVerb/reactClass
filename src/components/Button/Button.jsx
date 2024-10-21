@@ -3,9 +3,14 @@ import { useState } from "react";
 import "./style.css";
 
 function Button(props) {
-  const { title } = props;
-  return <button className={"btn add"}>{title}</button>;
+  const { title, onClick } = props;
+  return (
+    <button onClick={onClick} className={"btn add"}>
+      {title}
+    </button>
+  );
 }
+
 // function Button(props) {
 //   const { title, isDanger, isPrimary, isM, isL, onClick } = props;
 //   const [counter, setCounter] = useState(0);

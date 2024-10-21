@@ -1,10 +1,17 @@
 import React from "react";
 import "./style.css";
 
-export function Input() {
+export function Input(props) {
+  const { onChange, label } = props;
   return (
     <>
-      <input type="text" id="add" placeholder="Task to be done..." />
+      <input
+        onChange={onChange}
+        type="text"
+        id="add"
+        placeholder="Task to be done..."
+        value={label}
+      />
     </>
   );
 }

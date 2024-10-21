@@ -3,11 +3,11 @@ import "./style.css";
 import { Input } from "../input/Input";
 import Button from "../Button/Button";
 
-export function AddItemSection() {
+export function AddItemSection({ onClick, onChange, label }) {
   return (
     <div className="task">
-      <Input />
-      <Button title="Add" />
+      <Input onChange={onChange} label={label} />
+      <Button title="Add" onClick={onClick} />
     </div>
   );
 }
