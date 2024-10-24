@@ -54,6 +54,7 @@ function App() {
           onClick={handeleAddItem}
           onChange={handleInput}
           label={label}
+          title="Add"
         />
         {list}
       </div>
